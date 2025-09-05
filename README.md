@@ -24,7 +24,7 @@ There are a few menu options available, by default they are all unchecked. You w
 This option will allow you to choose an Mtar file after the model has loaded. This allows you to view animations provided the bones match.
 
 ##### Highlight Missing Textures
-This option will addd a fuschia colour to textures that are missing so that they are easier to identify.
+This option will add a fuchsia colour to textures that are missing so that they are easier to identify.
 
 ##### Render Layer Map As Diffuse
 The game blends certain diffuse maps together, as I cannot do this in Noesis I have given the option to render the layer map as the main diffuse for the times when the layer map is supposed to be the main diffuse.

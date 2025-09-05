@@ -106,7 +106,7 @@ int useShader002(MdnMaterial* material, noesisMaterial_t* noeMat, int maxTex, st
 inline
 int useShader003(MdnMaterial* material, noesisMaterial_t* noeMat, int maxTex, std::vector<uint32_t>& normalMaps) {
     shaderParams params = setParams(material->flag);
-    //params.noNorm = true; //sometimes has normal but not always
+    // params.noNorm = true; // some materials have a normal map, others do not
     int i = basicShader(material, noeMat, maxTex, normalMaps, params);
     if (i < maxTex) setLayer(noeMat, material->texture[i++], i); //layer texture goes here
     if (i < maxTex && params.hasEnv) setEnv(noeMat, material->texture[i++], i);
